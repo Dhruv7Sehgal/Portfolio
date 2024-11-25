@@ -2,6 +2,7 @@
 
 import { AvatarImage, AvatarFallback, Avatar } from "@/components/ui/avatar";
 import { motion } from "framer-motion";
+import { BackgroundLines } from "./ui/background-lines";
 
 export default function AboutUs() {
   return (

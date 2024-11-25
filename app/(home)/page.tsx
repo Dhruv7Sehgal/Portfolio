@@ -1,25 +1,17 @@
 import React from "react";
-
-import { BackgroundLinesDemo } from "@/components/BackgroundLinesDemo";
+import LandingPage from "@/components/landing";
 import { WobbleCardDemo } from "@/components/WobbleCardDemo";
 import AboutUs from "@/components/Aboutus";
-import { VortexDemo } from "@/components/VortexDemo";
-
-const Page = () => {
+import Contactus from "@/components/Contactus";
+export default function Home() {
   return (
-    <>
-      <section className="w-full dark:bg-black">
-        <BackgroundLinesDemo />
+    <div className="w-full">
+      <LandingPage />
+      <div className="grid relative bg-white dark:bg-black w-full ">
         <AboutUs />
-        <div className="mb-44">
-          <WobbleCardDemo />
-        </div>
-        <div className="mb-44 w-full">
-          <VortexDemo />
-        </div>
-      </section>
-    </>
+        <WobbleCardDemo />
+        <Contactus />
+      </div>
+    </div>
   );
-};
-
-export default Page;
+}
