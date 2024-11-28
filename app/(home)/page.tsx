@@ -3,6 +3,7 @@ import LandingPage from "@/components/landing";
 import { WobbleCardDemo } from "@/components/WobbleCardDemo";
 import AboutUs from "@/components/Aboutus";
 import Contactus from "@/components/Contactus";
+
 export default function Home() {
   return (
     <div className="w-full">
